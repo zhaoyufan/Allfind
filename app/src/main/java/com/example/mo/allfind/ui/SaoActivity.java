@@ -1,10 +1,8 @@
-package com.example.mo.allfind;
+package com.example.mo.allfind.ui;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
 import android.hardware.Sensor;
@@ -22,13 +20,12 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.widget.Toast;
 
-import java.io.ByteArrayOutputStream;
+import com.example.mo.allfind.R;
+
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 
 public class SaoActivity extends AppCompatActivity implements SurfaceHolder.Callback, SensorEventListener,Camera.PictureCallback {
     private static final int START_SHAKE = 0x111;
@@ -55,7 +52,22 @@ public class SaoActivity extends AppCompatActivity implements SurfaceHolder.Call
                     break;
                 case START_TAKEPIC:
                     //自动拍照
-                    camera.takePicture(null,null,null,SaoActivity.this);
+                    camera.takePicture(new Camera.ShutterCallback() {
+                        @Override
+                        public void onShutter() {
+
+                        }
+                    }, new Camera.PictureCallback() {
+                        @Override
+                        public void onPictureTaken(byte[] data, Camera camera) {
+
+                        }
+                    }, new Camera.PictureCallback() {
+                        @Override
+                        public void onPictureTaken(byte[] data, Camera camera) {
+
+                        }
+                    }, SaoActivity.this);
                     Log.i("remind","自动拍照");
                     break;
             }

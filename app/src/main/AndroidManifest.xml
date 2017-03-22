@@ -44,22 +44,22 @@
         android:supportsRtl="true"
         android:hardwareAccelerated="false"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MapActivity" />
+        <activity android:name=".ui.MapActivity" />
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="iIRlXGLaqUs4TzTpr5Gg8juvqm4Vtfzs" />
 
-        <activity android:name=".PersionalActivity"></activity>
-        <activity android:name=".SaoActivity"/>
-        <activity android:name=".YouhuiActivity"/>
+        <activity android:name=".ui.PersionalActivity"></activity>
+        <activity android:name=".ui.SaoActivity"/>
+        <activity android:name=".ui.YouhuiActivity"/>
     </application>
 
 </manifest>

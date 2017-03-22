@@ -1,4 +1,4 @@
-package com.example.mo.allfind;
+package com.example.mo.allfind.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.mo.allfind.R;
 
 public class PersionalActivity extends AppCompatActivity {
     private LinearLayout myyouhui;
@@ -33,6 +35,5 @@ public class PersionalActivity extends AppCompatActivity {
         });
         tv_title= (TextView) findViewById(R.id.tv_title);
         tv_title.setText("个人中心");
-
     }
 }

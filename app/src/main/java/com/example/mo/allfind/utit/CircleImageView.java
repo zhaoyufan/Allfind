@@ -1,4 +1,4 @@
-package com.example.mo.allfind;
+package com.example.mo.allfind.utit;
 
 
 import android.content.Context;
@@ -20,6 +20,8 @@ import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+
+import com.example.mo.allfind.R;
 
 
 public class CircleImageView extends ImageView {

@@ -1,8 +1,6 @@
-package com.example.mo.allfind;
+package com.example.mo.allfind.ui;
 
 import android.content.Intent;
-import android.location.Location;
-import android.location.LocationListener;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,6 +25,7 @@ import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.Marker;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.model.LatLng;
+import com.example.mo.allfind.R;
 
 import java.util.ArrayList;
 import java.util.List;
