@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include-->
+        <!--android:id="@+id/aaa"-->
+        <!--layout="@layout/common_title_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"/>-->
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.baidu.mapapi.map.MapView>
+
+    <include layout="@layout/common_title_bar"/>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@mipmap/change"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dingwei"
+            android:layout_marginRight="75dp"
+            android:background="@mipmap/new1"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/sao"
+            android:background="@mipmap/sao"
+            android:layout_width="55dp"
+            android:layout_height="55dp" />
+
+        <Button
+            android:id="@+id/cang"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="75dp"
+            android:background="#00000000"
+            android:text="藏"
+            android:textColor="#000"
+            android:textSize="30sp" />
+    </LinearLayout>
+</RelativeLayout>
