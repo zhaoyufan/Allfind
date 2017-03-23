@@ -38,12 +38,13 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <application
+        android:name=".util.App"
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:hardwareAccelerated="false"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/AppTheme">
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,9 +58,32 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="iIRlXGLaqUs4TzTpr5Gg8juvqm4Vtfzs" />
 
-        <activity android:name=".ui.PersionalActivity"></activity>
-        <activity android:name=".ui.SaoActivity"/>
-        <activity android:name=".ui.YouhuiActivity"/>
+        <activity android:name=".ui.PersionalActivity" />
+        <activity android:name=".ui.SaoActivity" />
+        <activity android:name=".ui.YouhuiActivity" />
+        <activity android:name=".ui.RegisterActivity"></activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106051290" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="582971bc766613615e003370" >
+        </meta-data>
     </application>
 
 </manifest>

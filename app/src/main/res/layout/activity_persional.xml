@@ -15,7 +15,7 @@
         android:background="#fff"
         android:orientation="horizontal">
 
-        <com.example.mo.allfind.utit.CircleImageView
+        <com.example.mo.allfind.util.CircleImageView
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_gravity="center_vertical"

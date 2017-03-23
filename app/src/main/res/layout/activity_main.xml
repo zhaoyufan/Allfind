@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
@@ -49,6 +48,7 @@
         android:background="#D3D3D3"
         android:text="登陆"/>
     <Button
+        android:id="@+id/regist"
         android:layout_width="280dp"
         android:layout_height="35dp"
         android:layout_gravity="center"
@@ -76,16 +76,19 @@
 
 
         <ImageView
+            android:id="@+id/qq_login"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@mipmap/qq"/>
 
         <ImageView
+            android:id="@+id/wx_login"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
             android:src="@mipmap/wei"/>
         <ImageView
+            android:id="@+id/wb_login"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
